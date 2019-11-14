@@ -252,8 +252,8 @@ table {
   border-radius: 10px;
 }
 p {
-  margin-top: 1rem;
-  font-size: 2vh;
+  margin-top: 10px;
+  font-size: 20px;
   cursor: default;
 }
 
@@ -268,11 +268,13 @@ h3,
 h4,
 h5 {
   cursor: default;
-  font-size: 5vh;
+  font-size: 2em;
   font-family: Georgia, "Times New Roman", sans-serif;
   letter-spacing: 0.01em;
   color: grey;
   border: 1px solid green;
+  padding :10px;
+  box-shadow: inset 5px 5px 5px #142516;
 }
 h4:hover {
   color: rgb(255, 0, 0);
@@ -281,9 +283,10 @@ h4:hover {
 /* My code starts here! */
 
 .masterC {
+  
   width: 90%;
   margin: 0 auto;
-  border: 0.1em solid black;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -299,8 +302,10 @@ header {
   height: 50px;
   display: flex;
   position: fixed;
+  
   top: 0;
-  border: 0.1em solid green;
+  z-index: 1;
+  border: 1px solid green;
   background-color: darkslategrey;
 }
 .top {
@@ -316,7 +321,7 @@ a {
   margin: 20px;
   padding: 10px;
   text-align: center;
-  text-shadow: 0.1rem 0.1rem 0.3rem;
+  text-shadow: 1px 1px 3px;
   text-decoration: none;
   background: #656565;
   background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
@@ -324,12 +329,11 @@ a {
   background: linear-gradient(#656565, #444);
   box-shadow: inset 0 0 0 1px #939393;
   color: rgb(199, 193, 193);
-  border: 0.1em solid green;
-  text-shadow: 0 0.1rem 0 #2f2f2f;
+  border: 1px solid green;
+  text-shadow: 0 1px 0 #2f2f2f;
 
 }
 
-}
 div nav a:hover {
   background: #4c4c4c;
   background: -webkit-gradient(
@@ -359,7 +363,7 @@ header nav a:hover {
 .logo {
   padding: 5px;
 
-  border: 0.1em solid green;
+  border: 1px solid green;
 
   animation: logobgch 3s infinite;
 }
@@ -385,13 +389,13 @@ header nav a:hover {
   margin: 60px 10px 0 10px;
   background-color: darkslategrey;
   text-align: center;
-  border: 0.1em solid black;
+  border: 1px solid black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 h1 {
-  font-size: 10vh;
+  font-size: 5em;
 }
 h1:hover {
   color: rgb(255, 0, 0);
@@ -408,7 +412,7 @@ h1:hover {
   text-shadow: 0.1rem 0.1rem 0.3rem;
   text-decoration: none;
   height: 3em;
-  border: 0.1rem solid green;
+  border: 1px solid green;
   margin: 2% 2%;
   background: #656565;
   background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
@@ -441,14 +445,14 @@ h1:hover {
   background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#444));
   background: -moz-linear-gradient(#474747, #444);
   background: linear-gradient(#474747, #444);
-  border: solid 0.1rem #2f2f2f;
+  border: solid 1px #2f2f2f;
   box-shadow: inset 0 10px 15px 0 #3e3e3e;
 }
 
 .master img {
   filter: grayscale();
   height: 50vh;
-  border: 0.1rem solid green;
+  border: 3px solid green;
   border-radius: 100%;
 }
 .master img:hover {
@@ -458,46 +462,40 @@ h1:hover {
 
 /* master end */
 /* main */
-.master2 {
-  margin: 1%;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.master3 {
-  margin: 1%;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
 
 main {
-  border: 0.1rem solid black;
+  border: 1px solid black;
   background-color: darkslategrey;
-  padding: auto;
-  margin: 1%;
   display: flex;
   flex-wrap: wrap;
+  margin:10px;
+
+}
+
+.master2 {
+  background-color: darkslategrey;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .Features {
-  margin: 1%;
-  padding: 1%;
+  margin: 10px;
+  padding: 10px;
   text-align: center;
   height: fit-content;
   width: 30%;
-  border: 0.1rem solid white;
+  border: 1px solid white;
 }
 
 .About {
-  margin: 1%;
-  padding: 1%;
+  margin: 10px;
+  padding: 10px;
   text-align: center;
   height: fit-content;
   width: 30%;
-  border: 0.1rem solid white;
+  border: 1px solid white;
 }
 .middle-img {
   width: 100%;
@@ -509,56 +507,59 @@ main {
   text-align: center;
   height: fit-content;
   width: 30%;
-  margin: 1%;
-  padding: 1%;
-  border: 0.1rem solid white;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
 }
 
 .Product {
   text-align: center;
   height: fit-content;
   width: 30%;
-  margin: 1%;
-  padding: 1%;
-  border: 0.1rem solid white;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
 }
 
 .Vision {
   text-align: center;
   height: fit-content;
   width: 30%;
-  margin: 1%;
-  padding: 1%;
-  border: 0.1rem solid white;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
 }
 /* main end */
 /*Footer*/
 
 footer {
   background-color: darkslategrey;
-  border: 2px solid black;
+  border: 1px solid black;
   text-align: center;
-  margin: 1%;
-  padding: 1%;
+  margin: 10px;
+  padding: 10px;
+  
+  
 }
 
 footer section {
   cursor: default;
-  margin: 1%;
-  padding: 1%;
-  border: 0.1rem solid white;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid white;
 }
 
 footer p {
-  margin: 1% 0;
+  margin: 10px;
+
 }
 
 footer div {
   cursor: default;
-  text-align: center;
-  margin: 10px;
+  text-align: right;
+  
   padding: 10px;
-  border: 0.1rem solid white;
+  border: 1px solid white;
 }
 @media (max-width: 800px) {
 }
