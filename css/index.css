@@ -254,6 +254,7 @@ table {
 p {
   margin-top: 1rem;
   font-size: 2vh;
+  cursor: default;
 }
 
 html,
@@ -266,6 +267,7 @@ h2,
 h3,
 h4,
 h5 {
+  cursor: default;
   font-size: 5vh;
   font-family: Georgia, "Times New Roman", sans-serif;
   letter-spacing: 0.01em;
@@ -289,6 +291,7 @@ h4:hover {
 
 /* nav bar */
 header {
+  
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -301,6 +304,7 @@ header {
   background-color: darkslategrey;
 }
 .top {
+  
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -308,6 +312,7 @@ header {
 }
 
 a {
+  cursor: grab;
   margin: 20px;
   padding: 10px;
   text-align: center;
@@ -390,6 +395,7 @@ h1 {
 }
 h1:hover {
   color: rgb(255, 0, 0);
+  cursor: default;
  
 }
 .letters {
@@ -398,6 +404,7 @@ h1:hover {
 }
 
 .letters button {
+  cursor: grab;
   text-shadow: 0.1rem 0.1rem 0.3rem;
   text-decoration: none;
   height: 3em;
@@ -536,6 +543,7 @@ footer {
 }
 
 footer section {
+  cursor: default;
   margin: 1%;
   padding: 1%;
   border: 0.1rem solid white;
@@ -546,6 +554,7 @@ footer p {
 }
 
 footer div {
+  cursor: default;
   text-align: center;
   margin: 10px;
   padding: 10px;
