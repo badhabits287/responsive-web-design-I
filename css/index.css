@@ -302,7 +302,6 @@ header {
   height: 50px;
   display: flex;
   position: fixed;
-  
   top: 0;
   z-index: 1;
   border: 1px solid green;
@@ -591,4 +590,128 @@ a {
 
 
 @media (max-width: 500px) {
+
+
+.masterC { 
+background-color: lightcoral;
+align-items: center;
 }
+.master {
+  margin:0 10px;
+}
+header {
+position: static;
+height: fit-content;
+
+}
+.top {
+display: flex;
+flex-direction: column;
+width: 100%;
+
+}
+.middle-img {
+    width: 80%
+  }
+a {
+  width: 100%;
+    
+  }
+
+  .master img {
+   display: none;
+   
+  }
+  main {
+  width: 480px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  
+  }
+ .master2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
+ .Features {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  height: fit-content;
+  width: 100%;
+  border: 1px solid white;
+}
+.About {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  height: fit-content;
+  width: 100%;
+  border: 1px solid white;
+}
+.middle-img {
+  width: 100%;
+  height: fit-content;
+  
+}
+
+.Services {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  height: fit-content;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.Product {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  height: fit-content;
+  width: 100%;
+  border: 1px solid white;
+}
+.Vision {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  height: fit-content;
+  width: 100%;
+  border: 1px solid white;
+}
+
+  
+  /*Footer*/
+  
+  footer {
+    background-color: darkslategrey;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
+    
+  }
+  
+  footer section {
+    cursor: default;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid white;
+  }
+  
+  footer p {
+    margin: 10px;
+  }
+  footer div {
+    cursor: default;
+    text-align: right;
+    
+    padding: 10px;
+    border: 1px solid white;
+ 
+}
+  
+
