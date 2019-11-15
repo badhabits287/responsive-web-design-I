@@ -273,7 +273,7 @@ h5 {
   letter-spacing: 0.01em;
   color: grey;
   border: 1px solid green;
-  padding :10px;
+  padding: 10px;
   box-shadow: inset 5px 5px 5px #142516;
 }
 h4:hover {
@@ -283,7 +283,6 @@ h4:hover {
 /* My code starts here! */
 
 .masterC {
-  
   width: 100%;
   margin: 0 auto;
   border: 1px solid black;
@@ -294,7 +293,6 @@ h4:hover {
 
 /* nav bar */
 header {
-  
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -308,7 +306,6 @@ header {
   background-color: darkslategrey;
 }
 .top {
-  
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -330,7 +327,6 @@ a {
   color: rgb(199, 193, 193);
   border: 1px solid green;
   text-shadow: 0 1px 0 #2f2f2f;
-
 }
 
 div nav a:hover {
@@ -399,11 +395,9 @@ h1 {
 h1:hover {
   color: rgb(255, 0, 0);
   cursor: default;
- 
 }
 .letters {
   color: grey;
-
 }
 
 .letters button {
@@ -458,7 +452,6 @@ h1:hover {
   filter: unset;
 }
 
-
 /* master end */
 /* main */
 
@@ -467,8 +460,7 @@ main {
   background-color: darkslategrey;
   display: flex;
   flex-wrap: wrap;
-  margin:10px;
-
+  margin: 10px;
 }
 
 .master2 {
@@ -537,8 +529,6 @@ footer {
   text-align: center;
   margin: 10px;
   padding: 10px;
-  
-  
 }
 
 footer section {
@@ -554,164 +544,117 @@ footer p {
 footer div {
   cursor: default;
   text-align: right;
-  
+
   padding: 10px;
   border: 1px solid white;
 }
 @media (max-width: 800px) {
+  header {
+    height: 99px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 97.5%;
+  }
 
-header {
-  height: 99px;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  width:97.5%;
+  .master {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    cursor: grab;
+    margin: 2px 10px;
+    padding: 10px;
+  }
+  .master img {
+    display: none;
+  }
 }
-
-.master {
-  margin-top: 110px;
-  display: flex;
-  flex-direction: column;
-}
-a {
-  cursor: grab;
-  margin: 2px 10px ;
-  padding: 10px;
-}
-.master img {
- display: none;
-}
-
-}
-
-
-
 
 @media (max-width: 500px) {
-
-
-.masterC { 
-background-color: lightcoral;
-align-items: center;
-}
-.master {
-  margin:0 10px;
-}
-header {
-position: static;
-height: fit-content;
-
-}
-.top {
-display: flex;
-flex-direction: column;
-width: 100%;
-
-}
-.middle-img {
-    width: 80%
+  .masterC {
+    align-items: center;
   }
-a {
-  width: 100%;
-    
+  .master {
+    margin: 0 10px;
+  }
+  header {
+    position: static;
+    height: fit-content;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .middle-img {
+    width: 80%;
+  }
+  a {
+    width: 100%;
   }
 
   .master img {
-   display: none;
-   
+    display: none;
   }
   main {
-  width: 480px;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  
+    width: 480px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
   }
- .master2{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
- }
- .Features {
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  height: fit-content;
-  width: 100%;
-  border: 1px solid white;
-}
-.About {
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  height: fit-content;
-  width: 100%;
-  border: 1px solid white;
-}
-.middle-img {
-  width: 100%;
-  height: fit-content;
-  
-}
-
-.Services {
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  height: fit-content;
-  width: 100%;
-  border: 1px solid white;
-}
-
-.Product {
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  height: fit-content;
-  width: 100%;
-  border: 1px solid white;
-}
-.Vision {
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  height: fit-content;
-  width: 100%;
-  border: 1px solid white;
-}
-
-  
-  /*Footer*/
-  
-  footer {
-    background-color: darkslategrey;
-    border: 1px solid black;
+  .master2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Features {
+    margin: 10px;
+    padding: 10px;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
-    
-    
-  }
-  
-  footer section {
-    cursor: default;
-    margin: 20px;
-    padding: 10px;
+    height: fit-content;
+    width: 100%;
     border: 1px solid white;
   }
-  
-  footer p {
+  .About {
     margin: 10px;
-  }
-  footer div {
-    cursor: default;
-    text-align: right;
-    
     padding: 10px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
     border: 1px solid white;
- 
-}
-  
+  }
+  .middle-img {
+    width: 100%;
+    height: fit-content;
+  }
 
+  .Services {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid white;
+  }
+
+  .Product {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid white;
+  }
+  .Vision {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid white;
+  }
+}
