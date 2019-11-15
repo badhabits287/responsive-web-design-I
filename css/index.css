@@ -575,11 +575,16 @@ footer div {
 }
 
 @media (max-width: 500px) {
+  body {
+    width: max-content;
+  }
   .masterC {
     align-items: center;
+    border: none;
   }
   .master {
     margin: 0 10px;
+    width:100%;
   }
   header {
     position: static;
