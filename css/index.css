@@ -1,3 +1,667 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+p {
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: default;
+}
+
+html,
+body {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  cursor: default;
+  font-size: 2em;
+  font-family: Georgia, "Times New Roman", sans-serif;
+  letter-spacing: 0.01em;
+  color: grey;
+  border: 1px solid green;
+  padding: 10px;
+  box-shadow: inset 5px 5px 5px #142516;
+}
+h4:hover {
+  color: rgb(255, 0, 0);
+  text-shadow: rgb(0, 0, 0);
+}
+/* My code starts here! */
+
+.masterC {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* nav bar */
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  border: 1px solid green;
+  background-color: darkslategrey;
+}
+.top {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  cursor: grab;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 3px;
+  text-decoration: none;
+  background: #656565;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
+  background: -moz-linear-gradient(#656565, #444);
+  background: linear-gradient(#656565, #444);
+  box-shadow: inset 0 0 0 1px #939393;
+  color: rgb(199, 193, 193);
+  border: 1px solid green;
+  text-shadow: 0 1px 0 #2f2f2f;
+}
+
+div nav a:hover {
+  background: #4c4c4c;
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    0 bottom,
+    from(#4c4c4c),
+    to(#565656)
+  );
+  background: -moz-linear-gradient(#4c4c4c, #565656);
+  background: linear-gradient(#4c4c4c, #565656);
+  box-shadow: inset 0 0 0 1px #818181;
+}
+
+div nav a:active {
+  background: #474747;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#444));
+  background: -moz-linear-gradient(#474747, #444);
+  background: linear-gradient(#474747, #444);
+  border: solid 2px #2f2f2f;
+  box-shadow: inset 0 10px 15px 0 #3e3e3e;
+}
+
+header nav a:hover {
+  color: red;
+}
+.logo {
+  padding: 5px;
+
+  border: 1px solid green;
+
+  animation: logobgch 3s infinite;
+}
+
+@keyframes logobgch {
+  0% {
+    background-color: rgb(243, 208, 9);
+  }
+  50% {
+    background-color: rgb(2, 102, 2);
+  }
+  100% {
+    background-color: rgb(252, 15, 2);
+  }
+}
+
+/* nav bar end */
+
+/*master */
+
+.master {
+  padding: 20px;
+  margin: 60px 10px 0 10px;
+  background-color: darkslategrey;
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+h1 {
+  font-size: 5em;
+}
+h1:hover {
+  color: rgb(255, 0, 0);
+  cursor: default;
+}
+.letters {
+  color: grey;
+}
+
+.letters button {
+  cursor: grab;
+  text-shadow: 0.1rem 0.1rem 0.3rem;
+  text-decoration: none;
+  height: 3em;
+  border: 1px solid green;
+  margin: 2% 2%;
+  background: #656565;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
+  background: -moz-linear-gradient(#656565, #444);
+  background: linear-gradient(#656565, #444);
+
+  box-shadow: inset 0 0 0 1px #939393;
+  color: #fff;
+  text-shadow: 0 1px 0 #2f2f2f;
+}
+
+.letters button:hover {
+  color: rgb(255, 0, 0);
+  background: #4c4c4c;
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    0 bottom,
+    from(#4c4c4c),
+    to(#565656)
+  );
+  background: -moz-linear-gradient(#4c4c4c, #565656);
+  background: linear-gradient(#4c4c4c, #565656);
+
+  box-shadow: inset 0 0 0 1px #818181;
+}
+
+.letters button:active {
+  background: #474747;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#444));
+  background: -moz-linear-gradient(#474747, #444);
+  background: linear-gradient(#474747, #444);
+  border: solid 1px #2f2f2f;
+  box-shadow: inset 0 10px 15px 0 #3e3e3e;
+}
+
+.master img {
+  filter: grayscale();
+  height: 50vh;
+  border: 3px solid green;
+  border-radius: 100%;
+}
+.master img:hover {
+  filter: unset;
+}
+
+/* master end */
+/* main */
+
+main {
+  border: 1px solid black;
+  background-color: darkslategrey;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.master2 {
+  background-color: darkslategrey;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Features {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  height: fit-content;
+  width: 30%;
+  border: 1px solid white;
+}
+
+.About {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  height: fit-content;
+  width: 30%;
+  border: 1px solid white;
+}
+.middle-img {
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+}
+
+.Services {
+  text-align: center;
+  height: fit-content;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.Product {
+  text-align: center;
+  height: fit-content;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.Vision {
+  text-align: center;
+  height: fit-content;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+}
+/* main end */
+/*Footer*/
+
+footer {
+  background-color: darkslategrey;
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+footer section {
+  cursor: default;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+footer p {
+  margin: 10px;
+}
+footer div {
+  cursor: default;
+  text-align: right;
+
+  padding: 10px;
+  border: 1px solid white;
+}
+@media (max-width: 800px) {
+  header {
+    height: 99px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1vh;
+    padding: 10px;
+    width: 97.5%;
+  }
+
+  .master {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    cursor: grab;
+    margin: 1vh;
+    padding: 10px;
+  }
+  .master img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .masterC {
+    align-items: center;
+    border: none;
+  }
+  .master {
+    margin: 0 10px;
+    
+  }
+  header {
+    position: static;
+    height: fit-content;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .middle-img {
+    width: 80%;
+  }
+  a {
+    width: 100%;
+  }
+
+  .master img {
+    display: none;
+  }
+  main {
+    width: 480px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .master2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Features {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid white;
+  }
+  .About {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid white;
+  }
+  .middle-img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .Services {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid white;
+  }
+
+  .Product {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid white;
+  }
+  .Vision {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid white;
+  }
+}
